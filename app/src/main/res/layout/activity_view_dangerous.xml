@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    tools:context=".ViewDangerous"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/gmaplink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:autoLink="web"
+        android:fontFamily="@font/ubuntu"
+        android:linksClickable="true"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/ubuntu"
+        android:text="Date and Time:"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:text="Comment"
+        android:fontFamily="@font/ubuntu"
+        android:background="@drawable/back"
+        android:textColor="#0a0c09"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/spam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/agree2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:fontFamily="@font/ubuntu"
+        android:layout_weight="1"/>
+
+</LinearLayout>

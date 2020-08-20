@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BeSafe-Nav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_key" translatable="false">AIzaSyArOBB2QjL_kE_Vj3lsjiHzjEVOyn7tHHc</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string-array name="spin_array">
+        <item>Morning</item>
+        <item>Evening</item>
+        <item>Afternoon</item>
+    </string-array>
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_main">MainACT</string>
+    <string name="app_name2">BeSafe</string>
+    <string name="emailid">Enter Email</string>
+    <string name="userpassword">Enter Password</string>
+    <string name="login_text">Login</string>
+    <string name="or_text">Or</string>
+    <string name="FirstName">Enter First Name</string>
+    <string name="LastName">Enter Last Name</string>
+    <string name="PhoneNumber">Enter Phone Number</string>
+    <string name="EnterPassoword">Enter Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="SignUp">SIGN UP</string>
+    <string name="LoginWord">LOGIN</string>
+    <string name="Key">Enter Key</string>
+    <string name="signUp">SIGN UP AS </string>
+    <string name="i_am">I am</string>
+    <string name="KEY">Enter Admin Key</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="registration">Registration</string>
+</resources>

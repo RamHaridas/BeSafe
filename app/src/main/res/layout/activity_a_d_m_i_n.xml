@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.andriod.besafe786.admin.ADMIN">
+
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/grid"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Admin Layout"
+                android:textSize="29sp"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3.5"
+        android:columnCount="1"
+        android:padding="10dp"
+        android:rowCount="3"
+        android:background="@drawable/background_down"
+        android:layout_height="0dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:onClick="openMap"
+            >
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b5b7b7"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/mapicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAP VIEW"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:fontFamily="@font/ubuntu"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:onClick="OpenSpam"
+            >
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b5b7b7"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/spam_1254523" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPAMMED MARKERS"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:fontFamily="@font/ubuntu"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:onClick="OpenDang"
+            >
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b5b7b7"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/spam_1254523" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DANGEROUS MARKERS"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:onClick="openProfile"
+            app:cardCornerRadius="15dp"
+            >
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b5b7b7"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profileicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROFILE"
+                    android:fontFamily="@font/ubuntu"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</LinearLayout>

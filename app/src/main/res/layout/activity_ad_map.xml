@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".admin.AdMap">
+    <fragment
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp" />
+    <Switch
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="560dp"
+        android:fontFamily="@font/ubuntu"
+        android:track="@drawable/custom_track"
+        android:onClick="removeMarker"
+        android:text="Remove Marker"
+        android:textColor="@color/white"/>
+    <Switch
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="560dp"
+        android:track="@drawable/custom_track"
+        android:fontFamily="@font/ubuntu"
+        android:onClick="addMarker"
+        android:text="Add Marker"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="600dp"
+        android:onClick="refreshActivity"
+        android:fontFamily="@font/ubuntu"
+        android:background="@drawable/rounded_button"
+        android:text="REFRESH" />
+</RelativeLayout>

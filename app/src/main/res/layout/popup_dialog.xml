@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/ubuntu"
+        android:textSize="20sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="Date and Time:"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:background="@color/cardview_light_background"
+        android:text="Comment"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_weight="9"/>
+    <TextView
+        android:id="@+id/stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/spam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="report spam"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="Agree"
+        android:onClick="agree"
+        android:layout_weight="1"/>
+</LinearLayout>

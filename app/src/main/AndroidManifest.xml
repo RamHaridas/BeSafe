@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andriod.besafe786">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.gallery.TimerActivity" />
+        <activity android:name=".admin.ADMIN" />
+        <activity android:name=".admin.AdPopUp2"
+            android:theme="@style/AppTheme.Popup2"/>
+        <activity android:name=".admin.AdPopUp"
+            android:theme="@style/AppTheme.Popup"/>
+        <activity android:name=".admin.AdMap" />
+        <activity android:name=".admin.AdProfile" />
+        <activity android:name=".admin.Spams" />
+        <activity android:name=".admin.UserProfile" />
+        <activity android:name=".admin.Dangerous" />
+        <activity android:name=".admin.ViewDangerous" />
+        <activity android:name=".admin.ViewMarker" />
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <service android:name=".ui.gallery.ExampleService" />
+    </application>
+</manifest>
